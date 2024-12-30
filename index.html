@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новогодний слайдер с гирляндой</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- Гирлянда -->
+    <div class="garland">
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+        <!-- Добавляйте больше огоньков по аналогии -->
+    </div>
+
+    <!-- Слайдер -->
+    <div class="slider-container">
+        <button class="nav-btn prev-btn">
+            <div class="tree"></div>
+        </button>
+        <div class="slider">
+            <img src="https://s-sd.ru/images/cms/thumbs/a5b0aeaa3fa7d6e58d75710c18673bd7ec6d5f6d/html_1920_1031_jpg_0_100.jpg" alt="Изображение HTML" class="slide">
+            <img src="https://i0.wp.com/appsfera.com/wp-content/uploads/ygzen/aa8aaeff60ed11817d6ef810f5b0bd40.png?w=1165&ssl=1" alt="Изображение CSS" class="slide">
+            <img src="https://avatars.dzeninfra.ru/get-zen_doc/9703143/pub_64745e6792919f0ad18cb2c1_6479fd44866e844683543977/scale_1200" alt="Изображение JS" class="slide">
+        </div>
+        <div class="slide-info">
+            <span class="current-slide">1</span> из <span class="total-slides">4</span>
+        </div>
+        <button class="nav-btn next-btn">
+            <div class="tree"></div>
+        </button>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
