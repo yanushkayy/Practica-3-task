@@ -34,7 +34,6 @@ body {
     flex-wrap: wrap;
 }
 
-/* Огоньки гирлянды */
 .garland .light {
     position: absolute;
     width: 15px;
@@ -67,7 +66,7 @@ body {
     position: relative;
     width: 80%;
     max-width: 800px;
-    background-color: rgba(255, 255, 255, 0.7); /* Прозрачный фон слайдера */
+    background-color: rgba(255, 255, 255, 0.7); 
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -89,7 +88,7 @@ body {
     display: block;
 }
 
-/* Стили для кнопок переключения в виде ёлок */
+
 .nav-btn {
     position: absolute;
     top: 50%;
@@ -102,13 +101,13 @@ body {
     height: 70px;
 }
 
-/* Стиль кнопки в виде ёлки */
+
 .nav-btn .tree {
     position: relative;
     width: 50px;
     height: 70px;
-    background-color: #228b22; /* Зелёный цвет, как у ёлки */
-    clip-path: polygon(50% 0%, 0% 100%, 100% 100%); /* Форма ёлки (треугольник) */
+    background-color: #228b22; 
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%); 
 }
 
 .nav-btn .tree:before {
@@ -120,7 +119,7 @@ body {
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    background-color: yellow; /* Звезда на верхушке ёлки */
+    background-color: yellow; 
 }
 
 .nav-btn .tree:after {
@@ -131,16 +130,15 @@ body {
     transform: translateX(-50%);
     width: 10px;
     height: 10px;
-    background-color: red; /* Игрушка на ёлке */
+    background-color: red; 
     border-radius: 50%;
 }
 
-/* Добавляем эффекты при наведении */
+
 .nav-btn:hover .tree {
-    background-color: #006400; /* Темно-зеленый при наведении */
+    background-color: #006400; 
 }
 
-/* Расположение кнопок */
 .prev-btn {
     left: 10px;
 }

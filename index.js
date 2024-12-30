@@ -22,13 +22,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Переход к следующему изображению
     function nextSlide() {
-        currentIndex = (currentIndex + 1) % slides.length; // Зацикливание
+        currentIndex = (currentIndex + 1) % slides.length; 
         updateSlider();
     }
 
     // Переход к предыдущему изображению
     function prevSlide() {
-        currentIndex = (currentIndex - 1 + slides.length) % slides.length; // Зацикливание
+        currentIndex = (currentIndex - 1 + slides.length) % slides.length; 
         updateSlider();
     }
 
@@ -39,7 +39,6 @@ document.addEventListener('DOMContentLoaded', function () {
     // Установим общее количество слайдов
     totalSlidesElem.textContent = slides.length;
 
-    // Инициализируем слайдер
     updateSlider();
 });
 
@@ -47,8 +46,8 @@ document.addEventListener('DOMContentLoaded', function () {
 document.addEventListener('DOMContentLoaded', () => {
     const garland = document.querySelector('.garland');
 
-    const numberOfLights = 100; // Количество огоньков на гирлянде
-    const colors = ['red', 'green', 'yellow', 'blue']; // Цвета огоньков
+    const numberOfLights = 100; 
+    const colors = ['red', 'green', 'yellow', 'blue']; 
 
     for (let i = 0; i < numberOfLights; i++) {
         const light = document.createElement('div');
@@ -59,8 +58,8 @@ document.addEventListener('DOMContentLoaded', () => {
         light.style.backgroundColor = randomColor;
 
         // Случайное позиционирование
-        const topPosition = Math.random() * 100; // Позиция сверху (в процентах)
-        const leftPosition = Math.random() * 100; // Позиция слева (в процентах)
+        const topPosition = Math.random() * 100; 
+        const leftPosition = Math.random() * 100; 
         light.style.top = `${topPosition}%`;
         light.style.left = `${leftPosition}%`;
 
